@@ -1,12 +1,12 @@
 object frmDice: TfrmDice
-  Left = 288
+  Left = 537
   Height = 258
-  Top = 159
+  Top = 146
   Width = 281
   Caption = 'Dice'
   ClientHeight = 258
   ClientWidth = 281
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '1.6.0.4'
   object btnPlay: TButton
     Left = 24
     Height = 48

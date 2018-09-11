@@ -46,10 +46,8 @@ begin
    for i := 1 to 5 do            //5x würfeln
        begin
          dice[i]:=random(6)+1;   //Zufallszahl zw 1..6 erzeugen, in Array schreiben
+         writeln(i,' ',dice[i]); //Debugausgabe von Wurf und Wert
        end;
-
-   //Debugausgabe der Werte
-   writeln(dice[1],' ',dice[2],' ',dice[3],' ',dice[4],' ',dice[5]);
 
   //sortieren
    //for j := 4 downto 1 do
