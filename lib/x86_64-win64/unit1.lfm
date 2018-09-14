@@ -1,25 +1,25 @@
 object frmDice: TfrmDice
-  Left = 537
-  Height = 258
-  Top = 146
-  Width = 281
+  Left = 429
+  Height = 590
+  Top = 97
+  Width = 491
   Caption = 'Dice'
-  ClientHeight = 258
-  ClientWidth = 281
+  ClientHeight = 590
+  ClientWidth = 491
   LCLVersion = '1.6.0.4'
   object btnPlay: TButton
-    Left = 24
-    Height = 48
-    Top = 144
+    Left = 8
+    Height = 24
+    Top = 56
     Width = 234
     Caption = 'Play'
     OnClick = btnPlayClick
     TabOrder = 0
   end
   object pnl1: TPanel
-    Left = 24
+    Left = 8
     Height = 40
-    Top = 97
+    Top = 8
     Width = 40
     Color = clBlack
     Font.CharSet = ANSI_CHARSET
@@ -34,9 +34,9 @@ object frmDice: TfrmDice
     TabOrder = 1
   end
   object pnl2: TPanel
-    Left = 72
+    Left = 56
     Height = 40
-    Top = 97
+    Top = 8
     Width = 40
     Color = clBlack
     Font.CharSet = ANSI_CHARSET
@@ -51,9 +51,9 @@ object frmDice: TfrmDice
     TabOrder = 2
   end
   object pnl3: TPanel
-    Left = 120
+    Left = 104
     Height = 40
-    Top = 97
+    Top = 8
     Width = 40
     Color = clBlack
     Font.CharSet = ANSI_CHARSET
@@ -68,9 +68,9 @@ object frmDice: TfrmDice
     TabOrder = 3
   end
   object pnl4: TPanel
-    Left = 168
+    Left = 152
     Height = 40
-    Top = 97
+    Top = 8
     Width = 40
     Color = clBlack
     Font.CharSet = ANSI_CHARSET
@@ -85,9 +85,9 @@ object frmDice: TfrmDice
     TabOrder = 4
   end
   object pnl5: TPanel
-    Left = 216
+    Left = 200
     Height = 40
-    Top = 97
+    Top = 8
     Width = 40
     Color = clBlack
     Font.CharSet = ANSI_CHARSET
@@ -100,5 +100,87 @@ object frmDice: TfrmDice
     ParentColor = False
     ParentFont = False
     TabOrder = 5
+  end
+  object pnlSortHead: TPanel
+    Left = 8
+    Height = 35
+    Top = 88
+    Width = 471
+    Caption = 'Sortieralgorithmen'
+    Color = clActiveCaption
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 6
+  end
+  object ListBoxUnsortiert: TListBox
+    Left = 11
+    Height = 389
+    Top = 152
+    Width = 85
+    ItemHeight = 0
+    TabOrder = 7
+  end
+  object lblUnsortiert: TLabel
+    Left = 11
+    Height = 15
+    Top = 136
+    Width = 96
+    Caption = 'unsortierte Zahlen'
+    ParentColor = False
+  end
+  object btnZufallszahlen: TButton
+    Left = 11
+    Height = 24
+    Top = 552
+    Width = 85
+    Caption = 'Zufallszahlen'
+    OnClick = btnZufallszahlenClick
+    TabOrder = 8
+  end
+  object edtAnzahl: TEdit
+    Left = 375
+    Height = 23
+    Top = 138
+    Width = 100
+    TabOrder = 9
+  end
+  object lblAnzahl: TLabel
+    Left = 336
+    Height = 15
+    Top = 138
+    Width = 36
+    Caption = 'Anzahl'
+    ParentColor = False
+  end
+  object ListBoxBubbleSort: TListBox
+    Left = 116
+    Height = 388
+    Top = 152
+    Width = 97
+    ItemHeight = 0
+    TabOrder = 10
+  end
+  object lblBubbleSort: TLabel
+    Left = 120
+    Height = 15
+    Top = 138
+    Width = 58
+    Caption = 'BubbleSort'
+    ParentColor = False
+  end
+  object btnBubbleSort: TButton
+    Left = 116
+    Height = 23
+    Top = 552
+    Width = 97
+    Caption = 'BubbleSort'
+    OnClick = btnBubbleSortClick
+    TabOrder = 11
   end
 end
