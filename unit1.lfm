@@ -1,7 +1,7 @@
 object frmDice: TfrmDice
-  Left = 239
+  Left = 133
   Height = 614
-  Top = 29
+  Top = 63
   Width = 491
   Caption = 'Dice'
   ClientHeight = 614
@@ -12,7 +12,7 @@ object frmDice: TfrmDice
     Height = 24
     Top = 56
     Width = 234
-    Caption = 'Play'
+    Caption = 'Wurf'
     OnClick = btnPlayClick
     TabOrder = 0
   end
@@ -104,7 +104,7 @@ object frmDice: TfrmDice
   object pnlSortHead: TPanel
     Left = 8
     Height = 35
-    Top = 88
+    Top = 280
     Width = 471
     Caption = 'Sortieralgorithmen'
     Color = clActiveCaption
@@ -117,62 +117,70 @@ object frmDice: TfrmDice
     ParentColor = False
     ParentFont = False
     TabOrder = 6
+    Visible = False
   end
   object ListBoxUnsortiert: TListBox
     Left = 11
-    Height = 389
-    Top = 174
+    Height = 197
+    Top = 366
     Width = 85
     ItemHeight = 0
     TabOrder = 7
+    Visible = False
   end
   object lblUnsortiert: TLabel
     Left = 11
     Height = 15
-    Top = 152
+    Top = 344
     Width = 96
     Caption = 'unsortierte Zahlen'
     ParentColor = False
+    Visible = False
   end
   object btnZufallszahlen: TButton
     Left = 11
     Height = 24
-    Top = 574
+    Top = 573
     Width = 85
     Caption = 'Zufallszahlen'
     OnClick = btnZufallszahlenClick
     TabOrder = 8
+    Visible = False
   end
   object edtAnzahl: TEdit
-    Left = 379
+    Left = 384
     Height = 23
-    Top = 128
+    Top = 320
     Width = 100
     TabOrder = 9
+    Visible = False
   end
   object lblAnzahl: TLabel
     Left = 336
     Height = 15
-    Top = 128
+    Top = 320
     Width = 36
     Caption = 'Anzahl'
     ParentColor = False
+    Visible = False
   end
   object ListBoxBubbleSort: TListBox
     Left = 116
-    Height = 388
-    Top = 174
+    Height = 197
+    Top = 366
     Width = 97
     ItemHeight = 0
     TabOrder = 10
+    Visible = False
   end
   object lblBubbleSort: TLabel
     Left = 120
     Height = 15
-    Top = 154
+    Top = 346
     Width = 58
     Caption = 'BubbleSort'
     ParentColor = False
+    Visible = False
   end
   object btnBubbleSort: TButton
     Left = 116
@@ -182,6 +190,7 @@ object frmDice: TfrmDice
     Caption = 'BubbleSort'
     OnClick = btnBubbleSortClick
     TabOrder = 11
+    Visible = False
   end
   object edtCounter: TEdit
     Left = 352
@@ -192,27 +201,83 @@ object frmDice: TfrmDice
   end
   object ListBoxSelectSort: TListBox
     Left = 224
-    Height = 388
-    Top = 174
+    Height = 197
+    Top = 366
     Width = 97
     ItemHeight = 0
     TabOrder = 13
+    Visible = False
   end
   object lblSelectSort: TLabel
     Left = 224
     Height = 15
-    Top = 152
+    Top = 346
     Width = 52
     Caption = 'SelectSort'
     ParentColor = False
+    Visible = False
   end
   object btnSelectSort: TButton
     Left = 224
     Height = 23
-    Top = 575
+    Top = 574
     Width = 97
     Caption = 'SelectSort'
     OnClick = btnSelectSortClick
     TabOrder = 14
+    Visible = False
+  end
+  object btnClose: TButton
+    Left = 265
+    Height = 24
+    Top = 55
+    Width = 71
+    Caption = 'Schließen'
+    OnClick = btnCloseClick
+    TabOrder = 15
+  end
+  object ListBoxInsertSort: TListBox
+    Left = 336
+    Height = 197
+    Top = 367
+    Width = 97
+    ItemHeight = 0
+    TabOrder = 16
+    Visible = False
+  end
+  object lblInsertSort: TLabel
+    Left = 336
+    Height = 15
+    Top = 346
+    Width = 50
+    Caption = 'InsertSort'
+    ParentColor = False
+    Visible = False
+  end
+  object btnInsertSort: TButton
+    Left = 336
+    Height = 23
+    Top = 574
+    Width = 97
+    Caption = 'InsertSort'
+    OnClick = btnInsertSortClick
+    TabOrder = 17
+    Visible = False
+  end
+  object pnlErgebnis: TPanel
+    Left = 8
+    Height = 35
+    Top = 88
+    Width = 471
+    Color = clActiveCaption
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 18
   end
 end
